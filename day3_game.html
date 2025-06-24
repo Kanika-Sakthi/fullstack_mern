@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROCK PAPER SCISSORS</title>
+  <link rel="stylesheet" href="day3_game.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ROCK PAPER SCISSORS</h1>
+    <div class="choices">
+      <button onclick="play('rock')">🪨stone</button>
+      <button onclick="play('paper')">📄paper</button>
+      <button onclick="play('scissors')">✂scissor</button>
+    </div>
+    <div class="result">
+      <p id="user-choice">Your choice: </p>
+      <p id="computer-choice">Computer's choice: </p>
+      <h2 id="winner"></h2>
+    </div>
+  </div>
+
+  <script src="day3_game.js"></script>
+</body>
+</html>
