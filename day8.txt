@@ -1,0 +1,147 @@
+use Kec
+switched to db Kec
+db.createCollection("user")
+{ ok: 1 }
+db.user.insertOne({
+Name:"Kani",
+email:"kanisd27@gmail.com",
+age:25,
+dept:"EIE",
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a26b859dcb144b109fc5a')
+}
+db.user.insertMany([{
+Name:"Kani",email:"kanisd27@gmail.com",age:19,dept:"EIE"},
+{Name:"Lathika",email:"lathikas.23eie@kongu.edu",age:20,dept:"EIE"},
+{Name:"Harsh",email:"harshinivelmuruhan.23eie@kongu.edu",age:20,dept:"EIE"},
+{Name:"Stalin",email:"stalina@gmail.com",age:25,dept:"EIE Trainer"},
+{Name:"Kee",email:"keerthanat.23eie@kongu.edu",age:19,dept:"EIE"},
+{Name:"KimTaehyung",email:"kimtaehyungbts@gmail.com",age:29,dept:"BTS"},
+{Name:"JungKook",email:"jkbts@gmail.com",age:27,dept:"BTS"},
+{Name:"Bangtan",email:"bts7@gmail.com",age:13,dept:"BTS"},
+{Name:"RM",email:"rmbts@gmail.com",age:30,dept:"BTS"},
+{Name:"Suga",email:"sugabts@gmail.com",age:31,dept:"BTS"},
+{Name:"Jimin",email:"jiminbts@gmail.com",age:29,dept:"BTS"},
+{Name:"Jin",email:"jinwwhbts@gmail.com",age:32,dept:"BTS"},
+{Name:"J-Hope",email:"jhopebts@gmail.com",age:30,dept:"BTS"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2f1a59dcb144b109fc5b'),
+    '1': ObjectId('685a2f1a59dcb144b109fc5c'),
+    '2': ObjectId('685a2f1a59dcb144b109fc5d'),
+    '3': ObjectId('685a2f1a59dcb144b109fc5e'),
+    '4': ObjectId('685a2f1a59dcb144b109fc5f'),
+    '5': ObjectId('685a2f1a59dcb144b109fc60'),
+    '6': ObjectId('685a2f1a59dcb144b109fc61'),
+    '7': ObjectId('685a2f1a59dcb144b109fc62'),
+    '8': ObjectId('685a2f1a59dcb144b109fc63'),
+    '9': ObjectId('685a2f1a59dcb144b109fc64'),
+    '10': ObjectId('685a2f1a59dcb144b109fc65'),
+    '11': ObjectId('685a2f1a59dcb144b109fc66'),
+    '12': ObjectId('685a2f1a59dcb144b109fc67')
+  }
+}
+db.user.find()
+{
+  _id: ObjectId('685a26b859dcb144b109fc5a'),
+  Name: 'Kani',
+  email: 'kanisd27@gmail.com',
+  age: 25,
+  dept: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc5b'),
+  Name: 'Kani',
+  email: 'kanisd27@gmail.com',
+  age: 19,
+  dept: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc5c'),
+  Name: 'Lathika',
+  email: 'lathikas.23eie@kongu.edu',
+  age: 20,
+  dept: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc5d'),
+  Name: 'Harsh',
+  email: 'harshinivelmuruhan.23eie@kongu.edu',
+  age: 20,
+  dept: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc5e'),
+  Name: 'Stalin',
+  email: 'stalina@gmail.com',
+  age: 25,
+  dept: 'EIE Trainer'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc5f'),
+  Name: 'Kee',
+  email: 'keerthanat.23eie@kongu.edu',
+  age: 19,
+  dept: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc60'),
+  Name: 'KimTaehyung',
+  email: 'kimtaehyungbts@gmail.com',
+  age: 29,
+  dept: 'BTS'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc61'),
+  Name: 'JungKook',
+  email: 'jkbts@gmail.com',
+  age: 27,
+  dept: 'BTS'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc62'),
+  Name: 'Bangtan',
+  email: 'bts7@gmail.com',
+  age: 13,
+  dept: 'BTS'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc63'),
+  Name: 'RM',
+  email: 'rmbts@gmail.com',
+  age: 30,
+  dept: 'BTS'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc64'),
+  Name: 'Suga',
+  email: 'sugabts@gmail.com',
+  age: 31,
+  dept: 'BTS'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc65'),
+  Name: 'Jimin',
+  email: 'jiminbts@gmail.com',
+  age: 29,
+  dept: 'BTS'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc66'),
+  Name: 'Jin',
+  email: 'jinwwhbts@gmail.com',
+  age: 32,
+  dept: 'BTS'
+}
+{
+  _id: ObjectId('685a2f1a59dcb144b109fc67'),
+  Name: 'J-Hope',
+  email: 'jhopebts@gmail.com',
+  age: 30,
+  dept: 'BTS'
+}
+db.user.findOne()
+
